@@ -6,14 +6,42 @@
     <title>Emmanuel Asiedu | Oil &amp; Gas Engineering Professional | Professional Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
-        
-        :root {
-            --primary: #0D5C63;
-            --accent: #14919B;
-        }
-        /* Sharper Profile Pictures */
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap');
+
+:root {
+    --primary: #0D5C63;
+    --accent: #14919B;
+}
+
+body {
+    font-family: 'Inter', system_ui, sans-serif;
+}
+
+/* === Stronger Modern Professional Typography === */
+h1, h2, h3 {
+    font-family: 'Inter', system_ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.05;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4.25rem;
+    }
+}
+
+h2 {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+/* Sharper Profile Pictures */
 img[alt="Emmanuel Asiedu"] {
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
@@ -21,84 +49,7 @@ img[alt="Emmanuel Asiedu"] {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
-
-/* Extra sharpness for the large hero photo */
-.md\:w-60 {
-    image-rendering: high-quality;
-}
-        
-        body {
-            font-family: 'Inter', system_ui, sans-serif;
-        }
-        
-        .heading-serif {
-            font-family: 'Playfair Display', Georgia, serif;
-        }
-
-        .section-header {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .section-header:after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(to right, #0D5C63, #14919B);
-            border-radius: 3px;
-        }
-
-        .nav-link {
-            transition: all 0.3s ease;
-        }
-        
-        .nav-link:hover {
-            color: #14919B;
-            transform: translateY(-1px);
-        }
-
-        .project-card {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .project-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-
-        .experience-card {
-            transition: all 0.3s ease;
-        }
-
-        .timeline-dot {
-            box-shadow: 0 0 0 4px #F0F7F7;
-        }
-
-        .skill-pill {
-            transition: all 0.2s ease;
-        }
-        
-        .skill-pill:hover {
-            transform: translateY(-2px);
-            background-color: #0D5C63;
-            color: white;
-        }
-
-        .stat-number {
-            font-variant-numeric: tabular-nums;
-        }
-
-        .professional-bg {
-            background: linear-gradient(135deg, #0D5C63 0%, #1A3A3D 100%);
-        }
-
-        .accent-text {
-            color: #14919B;
-        }
-    </style>
+</style>
 </head>
 <body class="bg-zinc-50 text-zinc-800">
     <!-- Navigation -->
