@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmanuel Asiedu | Oil &amp; Gas Engineer | Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
+        
+        :root {
+            --primary: #0D5C63;
+            --accent: #14919B;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+        }
+
+        .section-header {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-header:after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(to right, #0D5C63, #14919B);
+            border-radius: 3px;
+        }
+
+        .nav-link {
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #14919B;
+            transform: translateY(-1px);
+        }
+
+        .project-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+
+        .experience-card {
+            transition: all 0.3s ease;
+        }
+
+        .timeline-dot {
+            box-shadow: 0 0 0 4px #F0F7F7;
+        }
+
+        .skill-pill {
+            transition: all 0.2s ease;
+        }
+        
+        .skill-pill:hover {
+            transform: translateY(-2px);
+            background-color: #0D5C63;
+            color: white;
+        }
+
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+        }
+
+        .professional-bg {
+            background: linear-gradient(135deg, #0D5C63 0%, #1A3A3D 100%);
+        }
+
+        .accent-text {
+            color: #14919B;
+        }
+    </style>
+</head>
+<body class="bg-zinc-50 text-zinc-800">
+    <!-- Navigation -->
+    <nav class="bg-white border-b border-zinc-200 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center gap-x-3">
+                    <div class="w-10 h-10 bg-[#0D5C63] rounded-xl flex items-center justify-center">
+                        <span class="text-white font-bold text-2xl tracking-tighter">EA</span>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-xl tracking-tight">Emmanuel Asiedu</div>
+                        <div class="text-xs text-zinc-500 -mt-1">Oil &amp; Gas Engineer</div>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
+                    <a href="#about" class="nav-link text-zinc-600 hover:text-zinc-900">About</a>
+                    <a href="#experience" class="nav-link text-zinc-600 hover:text-zinc-900">Experience</a>
+                    <a href="#projects" class="nav-link text-zinc-600 hover:text-zinc-900">Projects</a>
+                    <a href="#skills" class="nav-link text-zinc-600 hover:text-zinc-900">Skills</a>
+                </div>
+                
+                <div class="flex items-center gap-x-3">
+                    <a href="#contact" 
+                       class="px-5 py-2.5 bg-[#0D5C63] hover:bg-[#0A4A4F] transition-colors text-white text-sm font-semibold rounded-2xl flex items-center gap-x-2">
+                        <i class="fas fa-envelope text-sm"></i>
+                        <span>Get in Touch</span>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/emmanuel-asiedu-b060b832a" target="_blank"
+                       class="w-10 h-10 flex items-center justify-center text-zinc-600 hover:text-[#0D5C63] hover:bg-zinc-100 rounded-2xl transition-colors">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="professional-bg text-white">
+        <div class="max-w-7xl mx-auto px-6 pt-16 pb-20">
+            <div class="max-w-4xl">
+                <div class="inline-flex items-center gap-x-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-3xl mb-6">
+                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
+                    <span class="text-sm font-medium tracking-wider">OPEN TO OPPORTUNITIES</span>
+                </div>
+                
+                <h1 class="text-6xl md:text-7xl font-bold tracking-tighter leading-none mb-4">
+                    Emmanuel Asiedu
+                </h1>
+                
+                <p class="text-2xl md:text-3xl text-white/90 font-light tracking-tight mb-8">
+                    Oil &amp; Gas Engineer • Reliability Strategist<br>
+                    Data-Driven Operations Leader • Energy Transition Advocate
+                </p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#experience" 
+                       class="inline-flex items-center justify-center gap-x-3 px-8 py-4 bg-white text-[#0D5C63] font-semibold rounded-3xl hover:bg-zinc-100 transition-all text-lg">
+                        <span>Explore My Work</span>
+                        <i class="fas fa-arrow-down text-sm"></i>
+                    </a>
+                    
+                    <a href="Emmanuel_Asiedu_CV.docx" download
+                       class="inline-flex items-center justify-center gap-x-3 px-8 py-4 border border-white/30 hover:bg-white/10 text-white font-semibold rounded-3xl transition-all text-lg">
+                        <i class="fas fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+                
+                <div class="flex items-center gap-x-8 mt-10 text-sm">
+                    <div class="flex items-center gap-x-2">
+                        <i class="fas fa-map-marker-alt text-emerald-400"></i>
+                        <span>Accra, Ghana</span>
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                        <i class="fas fa-globe text-emerald-400"></i>
+                        <span>Willing to relocate / travel extensively</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About / Philosophy Section -->
+    <section id="about" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-12 gap-x-12 items-start">
+            <div class="md:col-span-5 mb-10 md:mb-0">
+                <div class="sticky top-24">
+                    <h2 class="text-4xl font-bold tracking-tighter section-header">My Engineering Philosophy</h2>
+                    <p class="mt-6 text-lg text-zinc-600">I don't just maintain energy systems — I engineer them for peak reliability, regulatory excellence, and sustainable long-term impact.</p>
+                </div>
+            </div>
+            
+            <div class="md:col-span-7">
+                <div class="prose prose-lg text-zinc-700 max-w-none">
+                    <p class="text-xl leading-relaxed">With deep expertise spanning downstream petroleum operations, heavy-duty machinery integrity and lubrication programs, fuel logistics management, and regulatory compliance, I combine hands-on field leadership with advanced digital tools to transform complex operational challenges into measurable results.</p>
+                    
+                    <p class="mt-6">My unique edge lies in bridging traditional engineering rigor with modern data intelligence (MySQL, Power BI) and Ghana’s energy transition agenda — delivering solutions that improve equipment uptime, strengthen compliance, optimize resources, and contribute to national sustainability goals.</p>
+                </div>
+                
+                <div class="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <div class="bg-white border border-zinc-200 p-5 rounded-3xl">
+                        <div class="text-emerald-600 text-sm font-semibold tracking-wider">CORE BELIEF</div>
+                        <div class="mt-3 text-lg font-semibold">Data + Engineering = Sustainable Impact</div>
+                    </div>
+                    <div class="bg-white border border-zinc-200 p-5 rounded-3xl">
+                        <div class="text-emerald-600 text-sm font-semibold tracking-wider">APPROACH</div>
+                        <div class="mt-3 text-lg font-semibold">Reliability-first mindset with digital transformation</div>
+                    </div>
+                    <div class="bg-white border border-zinc-200 p-5 rounded-3xl">
+                        <div class="text-emerald-600 text-sm font-semibold tracking-wider">MISSION</div>
+                        <div class="mt-3 text-lg font-semibold">Building resilient, efficient, and future-proof energy systems</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section id="experience" class="bg-white border-y border-zinc-200 py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex justify-between items-end mb-10">
+                <div>
+                    <h2 class="text-4xl font-bold tracking-tighter section-header">Professional Background</h2>
+                    <p class="text-zinc-600 mt-2">Hands-on leadership across operations, reliability, regulatory compliance, and digital innovation.</p>
+                </div>
+                <a href="#projects" class="hidden md:flex items-center text-sm font-medium text-[#0D5C63] hover:underline">
+                    View Signature Projects <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+
+            <!-- Experience Timeline -->
+            <div class="space-y-8">
+                
+                <!-- Tontrac -->
+                <div class="experience-card bg-white border border-zinc-200 rounded-3xl p-8">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-y-4">
+                        <div>
+                            <div class="flex items-center gap-x-3">
+                                <div class="px-4 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold tracking-widest rounded-2xl">CURRENT</div>
+                                <h3 class="text-2xl font-semibold tracking-tight">Greasing Planner (Supervisor)</h3>
+                            </div>
+                            <p class="text-lg text-zinc-600 mt-1">Tontrac Plant and Engineering LTD • Accra, Ghana</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-mono text-sm text-zinc-500">March 2026 – Present</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 grid md:grid-cols-2 gap-x-8 gap-y-6 text-sm">
+                        <div>
+                            <div class="font-semibold text-[#0D5C63] mb-2 flex items-center gap-x-2">
+                                <i class="fas fa-cogs w-4"></i> 
+                                <span>Leadership &amp; Operations</span>
+                            </div>
+                            <ul class="space-y-1.5 text-zinc-600">
+                                <li>• Supervise daily lubrication &amp; preventive maintenance for mobile and fixed heavy-duty equipment</li>
+                                <li>• Lead field teams to improve equipment availability and minimize unplanned downtime</li>
+                                <li>• Enforce rigorous HSE standards and mentor technicians</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-[#0D5C63] mb-2 flex items-center gap-x-2">
+                                <i class="fas fa-chart-line w-4"></i> 
+                                <span>Digital Transformation &amp; Analytics</span>
+                            </div>
+                            <ul class="space-y-1.5 text-zinc-600">
+                                <li>• Built centralized MySQL database for equipment, lubrication schedules &amp; maintenance records</li>
+                                <li>• Developed interactive Power BI dashboards for real-time KPI monitoring</li>
+                                <li>• Enabled data-driven maintenance planning and predictive insights</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- i Engineering -->
+                <div class="experience-card bg-white border border-zinc-200 rounded-3xl p-8">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-y-4">
+                        <div>
+                            <h3 class="text-2xl font-semibold tracking-tight">Fuel Officer</h3>
+                            <p class="text-lg text-zinc-600 mt-1">i Engineering Ghana Limited • Accra, Ghana</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-mono text-sm text-zinc-500">April 2025 – July 2025</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 grid md:grid-cols-2 gap-x-8 gap-y-6 text-sm">
+                        <div>
+                            <div class="font-semibold text-[#0D5C63] mb-2">Fuel Logistics &amp; Operations</div>
+                            <ul class="space-y-1.5 text-zinc-600">
+                                <li>• Managed multi-site fuel logistics, inventory reconciliation &amp; consumption analysis</li>
+                                <li>• Coordinated daily supply planning, deliveries &amp; inter-site transfers</li>
+                                <li>• Ensured uninterrupted operations across telecom infrastructure</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-[#0D5C63] mb-2">Data &amp; Compliance</div>
+                            <ul class="space-y-1.5 text-zinc-600">
+                                <li>• Monitored CPH/CPD metrics and produced analytical performance reports</li>
+                                <li>• Conducted site inspections of fuel storage &amp; handling systems</li>
+                                <li>• Maintained documentation for regulatory transparency</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NPA -->
+                <div class="experience-card bg-white border border-zinc-200 rounded-3xl p-8">
+                    <div class="flex flex-col md:flex-row md:items-center justify-between gap-y-4">
+                        <div>
+                            <h3 class="text-2xl font-semibold tracking-tight">National Service Personnel – Regulatory Support</h3>
+                            <p class="text-lg text-zinc-600 mt-1">National Petroleum Authority (NPA) • Accra, Ghana</p>
+                        </div>
+                        <div class="text-right">
+                            <div class="font-mono text-sm text-zinc-500">September 2023 – December 2024</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 grid md:grid-cols-2 gap-x-8 gap-y-6 text-sm">
+                        <div>
+                            <div class="font-semibold text-[#0D5C63] mb-2">Regulatory Inspections</div>
+                            <ul class="space-y-1.5 text-zinc-600">
+                                <li>• Participated in inspections of <strong>420+ LPG facilities</strong> (cylinder exchange points, outlets &amp; bottling plants)</li>
+                                <li>• Evaluated facility conditions, documentation &amp; operational practices</li>
+                                <li>• Supported identification of non-compliances and corrective actions</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div class="font-semibold text-[#0D5C63] mb-2">Systems &amp; National Impact</div>
+                            <ul class="space-y-1.5 text-zinc-600">
+                                <li>• Designed Excel-based monitoring databases &amp; CRM tracking platforms</li>
+                                <li>• Contributed to CNG adoption framework and gas infrastructure policy</li>
+                                <li>• Supported safety awareness and stakeholder engagement initiatives</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signature Projects -->
+    <section id="projects" class="max-w-7xl mx-auto px-6 py-20">
+        <div class="mb-12">
+            <h2 class="text-4xl font-bold tracking-tighter section-header">Signature Projects &amp; Innovations</h2>
+            <p class="text-zinc-600 mt-3 max-w-2xl">Technical initiatives that demonstrate my ability to combine engineering fundamentals with digital tools and strategic thinking.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            
+            <!-- Project 1 -->
+            <div class="project-card bg-white border border-zinc-200 rounded-3xl overflow-hidden flex flex-col">
+                <img src="images/maintenance-dashboard.jpg" alt="Maintenance Data Analytics Dashboard" class="w-full h-48 object-cover">
+                <div class="p-8 flex-1 flex flex-col">
+                    <div>
+                        <div class="text-emerald-600 text-xs font-bold tracking-[1.5px]">DATA &amp; ANALYTICS • 2026</div>
+                        <h3 class="text-2xl font-semibold tracking-tight mt-2">Maintenance Data Management &amp; Analytics System</h3>
+                    </div>
+                    <div class="flex-1 mt-4 text-sm text-zinc-600 leading-relaxed">
+                        Designed and implemented a centralized MySQL database and interactive Power BI dashboards for equipment records, lubrication schedules, and maintenance history. Automated validation and reporting, enabling predictive maintenance planning and real-time operational visibility.
+                    </div>
+                    <div class="mt-6 pt-6 border-t text-xs flex flex-wrap gap-2">
+                        <span class="skill-pill px-3 py-1 bg-zinc-100 text-zinc-600 rounded-2xl text-xs font-medium">MySQL</span>
+                        <span class="skill-pill px-3 py-1 bg-zinc-100 text-zinc-600 rounded-2xl text-xs font-medium">Power BI</span>
+                        <span class="skill-pill px-3 py-1 bg-zinc-100 text-zinc-600 rounded-2xl text-xs font-medium">Predictive Maintenance</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card bg-white border border-zinc-200 rounded-3xl overflow-hidden flex flex-col">
+                <img src="images/crm-dashboard.jpg" alt="LPG CRM Monitoring Dashboard" class="w-full h-48 object-cover">
+                <div class="p-8 flex-1 flex flex-col">
+                    <div>
+                        <div class="text-emerald-600 text-xs font-bold tracking-[1.5px]">REGULATORY SYSTEMS • 2024</div>
+                        <h3 class="text-2xl font-semibold tracking-tight mt-2">Cylinder Recirculation Model (CRM) Monitoring Platform</h3>
+                    </div>
+                    <div class="flex-1 mt-4 text-sm text-zinc-600 leading-relaxed">
+                        Built a sophisticated centralized Excel-based monitoring system to track hundreds of LPG facilities under Ghana’s CRM policy. Implemented automated validation, real-time status tracking, and reporting that improved regulatory oversight and policy implementation efficiency.
+                    </div>
+                    <div class="mt-6 pt-6 border-t text-xs flex flex-wrap gap-2">
+                        <span class="skill-pill px-3 py-1 bg-zinc-100 text-zinc-600 rounded-2xl text-xs font-medium">Advanced Excel</span>
+                        <span class="skill-pill px-3 py-1 bg-zinc-100 text-zinc-600 rounded-2xl text-xs font-medium">Process Automation</span>
+                        <span class="skill-pill px-3 py-1 bg-zinc-100 text-zinc-600 rounded-2xl text-xs font-medium">Regulatory Compliance</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-card bg-white border border-zinc-200 rounded-3xl overflow-hidden flex flex-col">
+                <img src="images/cng-station.jpg" alt="CNG Adoption and Sustainable Energy Infrastructure" class="w-full h-48 object-cover">
+                <div class="p-8 flex-1 flex flex-col">
+                    <div>
+                        <div class="text-emerald-600 text-xs font-bold tracking-[1.5px]">ENERGY TRANSITION • 2024</div>
+                        <h3 class="text-2xl font-semibold tracking-tight mt-2">Compressed Natural Gas (CNG) Adoption Framework</h3>
+                    </div>
+                    <div class="flex-1 mt-4 text-sm text-zinc-600 leading-relaxed">
+                        Conducted comparative international policy analysis and supported the design of regulatory frameworks and infrastructure plans for CNG refueling stations and distribution networks in Ghana. Guided by senior leadership at the National Petroleum Authority Gas Directorate.
+                    </div>
+                    <div class="mt-6 pt-6 border-t text-xs flex flex-wrap gap-2">
+                        <span class="skill-pill px-3 py-1 bg-zinc-100 text-zinc-600 rounded-2xl text-xs font-medium">Policy Research</span>
+                        <span class="skill-pill px-3 py-1 bg-zinc-100 text-zinc-600 rounded-2xl text-xs font-medium">Infrastructure Planning</span>
+                        <span class="skill-pill px-3 py-1 bg-zinc-100 text-zinc-600 rounded-2xl text-xs font-medium">Sustainability</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="project-card bg-white border border-zinc-200 rounded-3xl overflow-hidden flex flex-col">
+                <img src="images/drilling-optimization.jpg" alt="MATLAB Drilling Optimization Simulation" class="w-full h-48 object-cover">
+                <div class="p-8 flex-1 flex flex-col">
+                    <div>
+                        <div class="text-emerald-600 text-xs font-bold tracking-[1.5px]">SIMULATION &amp; MODELING • 2023</div>
+                        <h3 class="text-2xl font-semibold tracking-tight mt-2">MATLAB Drilling Equipment Optimization</h3>
+                    </div>
+                    <div class="flex-1 mt-4 text-sm text-zinc-600 leading-relaxed">
+                        Developed advanced MATLAB simulation modules to optimize bi-directional oil and gas drilling equipment performance. Simulated reservoir behavior and drilling fluid properties to enhance decision-making and drilling efficiency in exploration scenarios.
+                    </div>
+                    <div class="mt-6 pt-6 border-t text-xs flex flex-wrap gap-2">
+                        <span class="skill-pill px-3 py-1 bg-zinc-100 text-zinc-600 rounded-2xl text-xs font-medium">MATLAB</span>
+                        <span class="skill-pill px-3 py-1 bg-zinc-100 text-zinc-600 rounded-2xl text-xs font-medium">Reservoir Simulation</span>
+                        <span class="skill-pill px-3 py-1 bg-zinc-100 text-zinc-600 rounded-2xl text-xs font-medium">Optimization</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="bg-zinc-900 text-white py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-bold tracking-tighter mb-10">Technical Arsenal &amp; Competencies</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div>
+                    <div class="uppercase tracking-[2px] text-xs font-semibold text-emerald-400 mb-4">TECHNICAL &amp; DIGITAL</div>
+                    <div class="flex flex-wrap gap-2">
+                        <div class="skill-pill px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm">Advanced Excel &amp; Dashboards</div>
+                        <div class="skill-pill px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm">Power BI</div>
+                        <div class="skill-pill px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm">MySQL</div>
+                        <div class="skill-pill px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm">MATLAB</div>
+                        <div class="skill-pill px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm">ITSM Platforms</div>
+                        <div class="skill-pill px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm">Asset Integrity Management</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="uppercase tracking-[2px] text-xs font-semibold text-emerald-400 mb-4">OPERATIONS &amp; RELIABILITY</div>
+                    <div class="flex flex-wrap gap-2">
+                        <div class="skill-pill px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm">Lubrication &amp; Maintenance Planning</div>
+                        <div class="skill-pill px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm">Heavy-Duty Equipment Supervision</div>
+                        <div class="skill-pill px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm">Fuel Logistics &amp; Inventory</div>
+                        <div class="skill-pill px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm">Field Inspections</div>
+                        <div class="skill-pill px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm">HSE Standards &amp; Culture</div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="uppercase tracking-[2px] text-xs font-semibold text-emerald-400 mb-4">LEADERSHIP &amp; STRATEGIC</div>
+                    <div class="flex flex-wrap gap-2">
+                        <div class="skill-pill px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm">Team Supervision &amp; Mentoring</div>
+                        <div class="skill-pill px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm">Regulatory Compliance</div>
+                        <div class="skill-pill px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm">Stakeholder Engagement</div>
+                        <div class="skill-pill px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm">Data Storytelling</div>
+                        <div class="skill-pill px-4 py-2 bg-white/10 hover:bg-white/20 rounded-2xl text-sm">Energy Transition Initiatives</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+        <div class="grid md:grid-cols-12 gap-x-12">
+            <div class="md:col-span-4 mb-8 md:mb-0">
+                <h2 class="text-3xl font-bold tracking-tighter">Education &amp; Credentials</h2>
+            </div>
+            <div class="md:col-span-8 space-y-8">
+                <div>
+                    <div class="font-semibold">Bachelor of Engineering (BEng) in Oil and Gas Engineering</div>
+                    <div class="text-zinc-600">All Nations University, Koforidua, Ghana • 2018 – 2022</div>
+                    <div class="text-sm mt-1 text-zinc-500">Public Relations Officer, Oil &amp; Gas Engineering Department</div>
+                </div>
+                
+                <div>
+                    <div class="font-semibold mb-3">Professional Development</div>
+                    <div class="grid sm:grid-cols-2 gap-x-6 gap-y-3 text-sm">
+                        <div class="flex items-start gap-x-3">
+                            <i class="fas fa-check-circle text-emerald-500 mt-1"></i>
+                            <div>Oil and Gas Industry Operations and Markets – Coursera (2024)</div>
+                        </div>
+                        <div class="flex items-start gap-x-3">
+                            <i class="fas fa-check-circle text-emerald-500 mt-1"></i>
+                            <div>HSE Engineering – In Progress (Coursera)</div>
+                        </div>
+                        <div class="flex items-start gap-x-3">
+                            <i class="fas fa-clock text-amber-500 mt-1"></i>
+                            <div>API 570 / 510 / 653 – Planned</div>
+                        </div>
+                        <div class="flex items-start gap-x-3">
+                            <i class="fas fa-clock text-amber-500 mt-1"></i>
+                            <div>ASNT UT Level I – Planned</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Footer -->
+    <section id="contact" class="professional-bg text-white py-16">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold tracking-tighter mb-4">Let’s Build Something Reliable Together</h2>
+            <p class="text-white/80 max-w-md mx-auto">I’m passionate about driving operational excellence, regulatory integrity, and sustainable energy solutions. Open to roles in oil &amp; gas, energy, mining, and industrial reliability.</p>
+            
+            <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="mailto:asieduemmanuel926@gmail.com" 
+                   class="inline-flex items-center justify-center gap-x-3 px-10 py-4 bg-white text-[#0D5C63] font-semibold rounded-3xl hover:bg-zinc-100 transition-all w-full sm:w-auto">
+                    <i class="fas fa-envelope"></i>
+                    <span>asieduemmanuel926@gmail.com</span>
+                </a>
+                
+                <a href="tel:+233249488321" 
+                   class="inline-flex items-center justify-center gap-x-3 px-8 py-4 border border-white/30 hover:bg-white/10 font-semibold rounded-3xl transition-all w-full sm:w-auto">
+                    <i class="fas fa-phone"></i>
+                    <span>+233 249 488 321</span>
+                </a>
+            </div>
+            
+            <div class="mt-8 text-sm text-white/60">
+                Accra, Ghana • Willing to travel extensively &amp; work in rotational environments<br>
+                <a href="https://www.linkedin.com/in/emmanuel-asiedu-b060b832a" target="_blank" class="hover:text-white underline">LinkedIn Profile</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-zinc-950 text-zinc-400 text-xs py-8">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-y-2">
+            <div>© 2026 Emmanuel Asiedu. Crafted with precision.</div>
+            <div class="flex items-center gap-x-5">
+                <a href="#" class="hover:text-white">Download CV</a>
+                <span class="text-zinc-700">•</span>
+                <a href="https://www.linkedin.com/in/emmanuel-asiedu-b060b832a" target="_blank" class="hover:text-white">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        
+        // Tailwind script for any dynamic classes if needed
+        console.log('%c[Portfolio] Professional portfolio loaded successfully.', 'color:#14919B');
+    </script>
+</body>
+</html>
