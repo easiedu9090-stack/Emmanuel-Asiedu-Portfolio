@@ -13,6 +13,19 @@
             --primary: #0D5C63;
             --accent: #14919B;
         }
+        /* Sharper Profile Pictures */
+img[alt="Emmanuel Asiedu"] {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    filter: contrast(1.08) saturate(1.1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/* Extra sharpness for the large hero photo */
+.md\:w-60 {
+    image-rendering: high-quality;
+}
         
         body {
             font-family: 'Inter', system_ui, sans-serif;
