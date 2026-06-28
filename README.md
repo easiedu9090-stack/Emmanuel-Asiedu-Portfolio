@@ -1,6 +1,6 @@
 # Emmanuel Asiedu | Professional Portfolio
 
-**Oil & Gas Engineer | Reliability Strategist | Data-Driven Operations Leader | Energy Transition Advocate**
+**Oil & Gas Engineering Professional | Reliability Strategist | Data-Driven Operations Leader | Energy Transition Advocate**
 
 ---
 
