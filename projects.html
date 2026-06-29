@@ -2,7 +2,6 @@
 <div class="bg-white border border-zinc-200 rounded-3xl p-10 mt-12">
     <div class="max-w-4xl">
 
-        <!-- Header -->
         <div class="text-emerald-600 text-sm font-bold tracking-[1.5px]">SIMULATION &amp; CONTROL • 2022</div>
         <h2 class="text-3xl font-bold tracking-tighter mt-2">Optimization of Bi-Directional Oil and Gas Drilling Equipment Using MATLAB</h2>
         <p class="text-zinc-500 mt-1">Final Year Project • All Nations University, Koforidua</p>
@@ -11,7 +10,7 @@
         <div class="mt-8">
             <h3 class="font-semibold text-lg mb-3">Project Overview</h3>
             <p class="text-zinc-600 leading-relaxed">
-                This project developed a MATLAB/Simulink simulation framework to optimize the positioning accuracy of bi-directional oil and gas drilling equipment by actively controlling downhole vibrations and shocks using a Linear Quadratic Regulator (LQR) controller. The goal was to improve wellbore placement precision using a low-cost simulation approach instead of expensive field testing.
+                This project developed a MATLAB/Simulink simulation framework to optimize the positioning accuracy of bi-directional oil and gas drilling equipment by actively controlling downhole vibrations and shocks using a Linear Quadratic Regulator (LQR) controller. The goal was to improve wellbore placement precision using simulation instead of expensive field testing.
             </p>
         </div>
 
@@ -34,11 +33,11 @@
             </ul>
         </div>
 
-        <!-- Procedures -->
+        <!-- Methodology -->
         <div class="mt-8">
-            <h3 class="font-semibold text-lg mb-3">Procedures &amp; Methodology</h3>
+            <h3 class="font-semibold text-lg mb-3">Methodology</h3>
             <p class="text-zinc-600 leading-relaxed">
-                The project followed a structured simulation-based approach. A high-fidelity drill string and bit model was developed using mass-spring-damper principles in Simulink. Sensor signal processing modules were created to filter noise from downhole vibrations. A Linear Quadratic Regulator (LQR) controller was designed using Root Locus and state-space methods. A high-torque DC motor model was integrated with the drill string system. The controller was tuned and validated through simulation to achieve stable and accurate positioning under vibration disturbances.
+                A high-fidelity drill string and bit model was developed using mass-spring-damper principles in Simulink. Sensor signal processing modules were created to filter noise from downhole vibrations. A Linear Quadratic Regulator (LQR) controller was designed using Root Locus and state-space methods. A high-torque DC motor model was integrated with the drill string system. The controller was tuned and validated through multiple simulation scenarios to achieve stable and accurate positioning under vibration disturbances.
             </p>
         </div>
 
@@ -47,16 +46,21 @@
             <h3 class="font-semibold text-lg mb-3">Key Results Achieved</h3>
             <ul class="list-disc pl-5 space-y-2 text-zinc-600">
                 <li>The LQR controller successfully damped oscillations caused by downhole vibrations.</li>
-                <li>Drill bit oscillation was reduced from <strong>±15° to 0°</strong> within a 35-second simulation window.</li>
+                <li>Drill bit oscillation was reduced from <strong>±15° to 0°</strong> within a 35-second simulation.</li>
                 <li>The system demonstrated good stability, fast response, and effective disturbance rejection.</li>
                 <li>The project proved that MATLAB/Simulink can serve as a low-cost and effective tool for drilling optimization and control system design.</li>
             </ul>
+            <p class="mt-3 text-sm text-zinc-500 italic">
+                All simulation figures, Bode plots, Root Locus diagrams, and drill string models are available in the full technical report.
+            </p>
         </div>
 
         <!-- Request Full Report -->
         <div class="mt-10 p-6 bg-zinc-50 rounded-2xl">
             <h3 class="font-semibold mb-2">Want the Full Technical Report?</h3>
-            <p class="text-zinc-600 mb-4">The complete report includes all simulation diagrams, mathematical models, controller design details, and full analysis.</p>
+            <p class="text-zinc-600 mb-4">
+                The complete report includes all simulation diagrams, mathematical models, controller design details, Bode plots, and full analysis.
+            </p>
             
             <a href="mailto:asieduemmanuel926@gmail.com?subject=Request%20for%20Full%20Drilling%20Project%20Report" 
                class="inline-flex items-center justify-center gap-x-3 px-6 py-3 bg-[#0D5C63] text-white font-semibold rounded-2xl hover:bg-[#0A4A4F] transition-colors text-sm">
