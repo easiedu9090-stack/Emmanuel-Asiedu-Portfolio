@@ -385,24 +385,57 @@ a[download] {
     </div>
 </div>
 
-<!-- Project 4: MATLAB Drilling Optimization -->
-<div class="project-card bg-white border border-zinc-200 rounded-3xl overflow-hidden flex flex-col">
-    <img src="images/drilling-optimization.jpg" alt="MATLAB Drilling Optimization Simulation" class="w-full h-48 object-cover">
-    <div class="p-8 flex-1 flex flex-col">
-        <div>
-            <div class="text-emerald-600 text-xs font-bold tracking-[1.5px]">SIMULATION &amp; CONTROL • 2022</div>
-            <h3 class="text-2xl font-semibold tracking-tight mt-2">Optimization of Bi-Directional Oil and Gas Drilling Equipment Using MATLAB</h3>
-        </div>
+            <!-- ==================== DETAILED DRILLING PROJECT ==================== -->
+<div class="bg-white border border-zinc-200 rounded-3xl p-10 mt-12">
+    <div class="max-w-4xl">
+        <div class="text-emerald-600 text-sm font-bold tracking-[1.5px]">SIMULATION &amp; CONTROL SYSTEMS • 2022</div>
+        <h2 class="text-4xl font-bold tracking-tighter mt-2">Optimization of Bi-Directional Oil and Gas Drilling Equipment Using MATLAB-Based Modules</h2>
         
-        <div class="flex-1 mt-4 text-sm text-zinc-600 leading-relaxed">
-            Developed a MATLAB/Simulink framework using LQR control to optimize drill string and bit positioning by actively mitigating downhole vibrations and shocks.
+        <div class="mt-4 flex items-center gap-x-4 text-sm">
+            <div class="px-3 py-1 bg-zinc-100 rounded-full text-zinc-600">Final Year Project</div>
+            <div class="text-zinc-500">All Nations University • October 2022</div>
         </div>
 
-        <div class="mt-auto pt-6">
-            <a href="projects.html" class="inline-flex items-center text-emerald-600 hover:text-emerald-700 font-medium text-sm group">
-                View Case Study 
-                <span class="ml-1 transition-transform group-hover:translate-x-0.5">→</span>
+        <div class="mt-8 prose prose-zinc max-w-none">
+            <h3 class="font-semibold">Project Overview</h3>
+            <p>This project developed a MATLAB/Simulink simulation framework to optimize the positioning accuracy of bi-directional oil and gas drilling equipment by actively controlling downhole vibrations and shocks using a Linear Quadratic Regulator (LQR) controller.</p>
+
+            <h3 class="font-semibold mt-8">Problem Statement</h3>
+            <p>Drilling operations suffer from wellbore positioning uncertainty caused by downhole vibrations and shocks. These disturbances distort sensor signals (magnetometer and accelerometer), reducing the precision of the drill bit and wellbore placement. Traditional solutions often require expensive field testing.</p>
+
+            <h3 class="font-semibold mt-8">Methodology &amp; Technical Approach</h3>
+            <ul class="list-disc pl-5 space-y-2">
+                <li>Designed a high-fidelity <strong>drill string and bit model</strong> using mass-spring-damper principles in Simulink.</li>
+                <li>Developed <strong>sensor signal processing modules</strong> to filter noise from downhole vibrations.</li>
+                <li>Implemented a <strong>Linear Quadratic Regulator (LQR)</strong> controller using Root Locus and state-space methods.</li>
+                <li>Built a <strong>high-torque DC motor model</strong> integrated with the drill string system.</li>
+                <li>Used Bode plot analysis for controller tuning and stability verification.</li>
+            </ul>
+
+            <h3 class="font-semibold mt-8">Key Results</h3>
+            <p>The LQR controller successfully damped oscillations and achieved precise positioning:</p>
+            <ul class="list-disc pl-5 space-y-2">
+                <li>Reduced drill bit oscillation from <strong>±15° to 0°</strong> within a 35-second simulation.</li>
+                <li>Controller effectively rejected disturbances caused by downhole vibrations.</li>
+                <li>System demonstrated good stability and fast response using LQR gain tuning.</li>
+            </ul>
+
+            <div class="mt-6 p-6 bg-zinc-50 rounded-2xl border text-sm">
+                <strong>Note:</strong> Detailed simulation results including Bode plots, drill string model diagrams, motor test results, and controlled bit position graphs are available in the full project report.
+            </div>
+        </div>
+
+        <!-- Download Button -->
+        <div class="mt-10">
+            <a href="drilling-project-report.pdf" download 
+               class="inline-flex items-center gap-x-3 px-8 py-4 bg-[#0D5C63] hover:bg-[#0A4A50] text-white font-semibold rounded-2xl transition-colors">
+                <i class="fas fa-download"></i>
+                <span>Download Full Project Report (PDF)</span>
             </a>
+        </div>
+
+        <div class="mt-8 text-xs text-zinc-500">
+            <strong>Technologies:</strong> MATLAB, Simulink, LQR Control, Root Locus Design, State-Space Modeling, Signal Processing
         </div>
     </div>
 </div>
