@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drilling Equipment Optimization | Emmanuel Asiedu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body class="bg-white text-zinc-900">
+
+    <!-- Navbar -->
+    <nav class="border-b sticky top-0 bg-white z-50">
+        <div class="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-x-3">
+                <a href="index.html" class="font-semibold">Emmanuel Asiedu</a>
+            </div>
+            <a href="index.html" class="text-sm text-zinc-600 hover:text-zinc-900">← Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="max-w-4xl mx-auto px-6 pt-12 pb-8">
+        <div class="text-emerald-600 text-sm font-bold tracking-[1.5px]">SIMULATION &amp; CONTROL • 2022</div>
+        <h1 class="text-4xl font-bold tracking-tighter mt-2">Optimization of Bi-Directional Oil and Gas Drilling Equipment Using MATLAB</h1>
+        <p class="text-zinc-500 mt-2">Final Year Project • All Nations University, Koforidua • October 2022</p>
+    </div>
+
+    <div class="max-w-4xl mx-auto px-6 pb-16 space-y-10">
+
+        <!-- Overview -->
+        <div>
+            <h2 class="text-xl font-semibold mb-3">Project Overview</h2>
+            <p class="text-zinc-600 leading-relaxed">
+                In oil and gas drilling operations, downhole vibrations are a major cause of poor wellbore quality, equipment wear, and increased operational costs. This project focused on developing a simulation-based control system to actively reduce these vibrations and improve drill bit positioning accuracy.
+            </p>
+            <p class="text-zinc-600 leading-relaxed mt-4">
+                Using MATLAB and Simulink, a Linear Quadratic Regulator (LQR) controller was designed and tested to stabilize the drilling system. The goal was to demonstrate that advanced control strategies could be developed and validated through simulation before expensive field implementation.
+            </p>
+        </div>
+
+        <!-- Aim -->
+        <div>
+            <h2 class="text-xl font-semibold mb-3">Aim</h2>
+            <p class="text-zinc-600 leading-relaxed">
+                To develop a MATLAB/Simulink model capable of controlling drilling string equipment and significantly improving the accuracy of drill bit positioning by suppressing downhole vibrations.
+            </p>
+        </div>
+
+        <!-- Objectives -->
+        <div>
+            <h2 class="text-xl font-semibold mb-3">Objectives</h2>
+            <ul class="list-disc pl-5 space-y-2 text-zinc-600">
+                <li>Design a realistic dynamic model of the drill string and bit in Simulink</li>
+                <li>Develop sensor signal processing modules to filter noise from downhole vibration data</li>
+                <li>Design and optimally tune a Linear Quadratic Regulator (LQR) controller</li>
+                <li>Evaluate the controller’s performance in reducing oscillations under realistic disturbance conditions</li>
+            </ul>
+        </div>
+
+        <!-- Methodology -->
+        <div>
+            <h2 class="text-xl font-semibold mb-3">Methodology</h2>
+            <p class="text-zinc-600 leading-relaxed">
+                A high-fidelity drill string and bit model was developed using mass-spring-damper principles in Simulink. Realistic sensor noise was introduced using signal processing techniques. An LQR controller was designed using state-space methods and tuned through iterative simulation. Root Locus analysis was used to study system stability. A high-torque DC motor model was integrated to represent actuation. Multiple test scenarios were created to evaluate how effectively the controller could reject disturbances and maintain precise bit positioning.
+            </p>
+        </div>
+
+        <!-- Key Results -->
+        <div>
+            <h2 class="text-xl font-semibold mb-3">Key Results Achieved</h2>
+            <ul class="list-disc pl-5 space-y-2 text-zinc-600">
+                <li>The LQR controller successfully reduced drill bit oscillation from approximately <strong>±15° to near 0°</strong> within 35 seconds of simulation time.</li>
+                <li>The system demonstrated excellent stability and strong disturbance rejection under modeled downhole vibration conditions.</li>
+                <li>Fast response and accurate positioning were achieved without excessive control effort.</li>
+                <li>The project proved that MATLAB/Simulink is a powerful, low-cost platform for designing and validating drilling control systems before physical implementation.</li>
+            </ul>
+        </div>
+
+        <!-- Request Full Report -->
+        <div class="p-6 bg-zinc-50 rounded-2xl">
+            <h3 class="font-semibold mb-2">Full Technical Report Available</h3>
+            <p class="text-zinc-600 mb-4">The complete report includes all simulation models, mathematical derivations, Bode plots, Root Locus diagrams, controller tuning details, and full performance analysis.</p>
+            
+            <a href="mailto:asieduemmanuel926@gmail.com?subject=Request%20for%20Full%20Drilling%20Project%20Report" 
+               class="inline-flex items-center justify-center gap-x-3 px-6 py-3 bg-[#0D5C63] text-white font-semibold rounded-2xl hover:bg-[#0A4A4F] transition-colors text-sm">
+                <i class="fas fa-envelope"></i>
+                <span>Request Full Report via Email</span>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>
